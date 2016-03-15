@@ -1,0 +1,132 @@
+/* 
+
+all content created for Intro to Issues in Digital Media
+by Alexandra Teixeira Riggs (www.ariggs.net), April 2014
+
+*/
+
+html {
+	position: relative; 
+	min-height: 100%;
+}
+
+body {
+	color: #FFF;
+	margin: 0 0 30px;
+	padding: 0;
+	background-color: #5E6281;
+	font-family: 'Cabin', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1.0em;
+}
+
+a:hover {
+	color: #27E6E2;
+}
+
+h1 {
+	margin:45;
+}
+
+h2 {
+	margin: 0 0 1em;
+}
+
+#text-container {
+	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-size: 1.0em;
+}
+#header {
+	padding: 10px 0px;
+	background: #27E6E2;
+	position: relative;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	margin: auto;
+}
+
+#nav {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px; 
+	position: fixed;
+	top: 0;
+	background-color: #1DADE7;
+	width: 100%;
+	height: 30px;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 5;
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+	padding: 5px 75px 5px 0px;
+}
+
+#main {
+	float: right;
+	width: 460px;
+	padding: 0px 20px 60px;
+	background: #AA91A9;
+	height: auto;
+}
+#main-2 { /* this is the main div for the assignment example page */
+	float: right;
+	width: 760px;
+	padding: 0px 20px 40px;
+	background: #71A6C8;
+	height: auto;
+}
+
+#sidebar {
+	float: left;
+	width: 280px;
+	padding: 0px 10px 200px;
+	background: #71A6C8;
+	height: auto;
+}
+
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 10px 0;
+}
+
+#footer {
+	position: fixed;
+	padding: 5px 0px;
+	background: #2BFEB5;
+	height: 30px;
+	bottom: 0;
+	width: 100%;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	background: #99C;
+}
+
+* html #footer {
+	height:1px;
+}
+
+
+
+

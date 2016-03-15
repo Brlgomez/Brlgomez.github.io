@@ -1,0 +1,50 @@
+<!-- 
+
+all content created for Intro to Issues in Digital Media
+by Alexandra Teixeira Riggs (www.ariggs.net), April 2014
+edited by Brandon Gomez, October, 2015
+
+-->
+
+<html>
+  <head>
+    <title>About Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  
+  <body>
+    
+    <div id= "header">
+      <h1>About</h1>
+    </div>
+    
+    <div id="nav">
+      <ul>
+	<li><a href="http://people.ucsc.edu/~brlgomez/Portfolio/">Games</a></li>
+	<li><a href="http://people.ucsc.edu/~brlgomez/Portfolio/other.html">Other Projects</a></li>
+	<li><a href="http://people.ucsc.edu/~brlgomez/Portfolio/about.html"> About</a></li>
+      </ul>
+    </div>
+    
+    <div id="container">
+      <div id ="main-2">
+	<br> </br>
+	<img src="Pictures/Me.jpg" alt="Brandon Gomez" align="Left" height="400" width="300">
+	<a href="https://www.linkedin.com/in/brandon-gomez-0347b061">LinkedIn</a>
+	<br> </br>
+	<a href="https://drive.google.com/open?id=0BzlTDJV9JUmvcFhqSXJiOHZOdE0">Resume</a>
+	<p>Conact at brlgomez@ucsc.edu</p>
+	<p>Hello, I am Brandon Gomez, I am currently a senior game design major at UCSC. Video games and art have been my passion since I have playing with Legos when I was adolescent. I love to make games that are more in the abstract, unconventional side of things and I always try to make each one of my games have an individuality by having both different aesthetics and gameplay. I strive to make my games beautiful, unique and have a lasting impression on the player. </p>
+	<p>I am interested in becoming a gameplay programmer and an insight for the overall art direction for the project.</p>
+
+      </div>
+      
+    </div> <!-- end container -->
+    
+    <div id= "footer">
+      <p>University of California Santa Cruz, Brandon Gomez, 2015</p>
+    </div> <!-- end footer -->
+
+  </body>
+</html>
