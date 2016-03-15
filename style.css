@@ -1,20 +1,13 @@
-/* 
-
-all content created for Intro to Issues in Digital Media
-by Alexandra Teixeira Riggs (www.ariggs.net), April 2014
-
-*/
-
 html {
 	position: relative; 
 	min-height: 100%;
 }
 
 body {
-	color: #FFF;
+	color: #FFFFFF;
 	margin: 0 0 30px;
 	padding: 0;
-	background-color: #5E6281;
+	background-color: #3D3F50;
 	font-family: 'Cabin', sans-serif;
 }
 
@@ -25,7 +18,7 @@ a {
 }
 
 a:hover {
-	color: #27E6E2;
+	color: #3D3f50;
 }
 
 h1 {
@@ -41,8 +34,9 @@ h2 {
 	font-size: 1.0em;
 }
 #header {
+	color: #3D3f50;
 	padding: 10px 0px;
-	background: #27E6E2;
+	background: #DDFFE0;
 	position: relative;
 	top: 0;
 	height: 80px;
@@ -56,7 +50,7 @@ h2 {
 	padding: 10px 0px; 
 	position: fixed;
 	top: 0;
-	background-color: #1DADE7;
+	background-color: #A1DACE;
 	width: 100%;
 	height: 30px;
 }
@@ -75,15 +69,16 @@ h2 {
 #main {
 	float: right;
 	width: 460px;
-	padding: 0px 20px 60px;
-	background: #AA91A9;
+	padding: 0px 20px 80px;
+	background: #DDFFF1;
 	height: auto;
 }
-#main-2 { /* this is the main div for the assignment example page */
+
+#main-2 { /* this is for the projects page */
 	float: right;
 	width: 760px;
 	padding: 0px 20px 40px;
-	background: #71A6C8;
+	background: #A1CADA;
 	height: auto;
 }
 
@@ -91,10 +86,9 @@ h2 {
 	float: left;
 	width: 280px;
 	padding: 0px 10px 200px;
-	background: #71A6C8;
+	background: #A1CADA;
 	height: auto;
 }
-
 
 #sidebar ul {
 	list-style: none;
@@ -105,9 +99,10 @@ h2 {
 }
 
 #footer {
+	color: #3D3f50;
 	position: fixed;
 	padding: 5px 0px;
-	background: #2BFEB5;
+	background: #FFDDFC;
 	height: 30px;
 	bottom: 0;
 	width: 100%;
