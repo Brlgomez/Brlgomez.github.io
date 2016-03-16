@@ -51,7 +51,11 @@
 
 	    <center>
 		    <div id= "footer">
-		      	<p>2016</p>
+		      	<script language="Javascript">
+		    		var theDate = new Date(document.lastModified); 
+		    		months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+					document.write(months[theDate.getMonth()] + " " + theDate.getFullYear());
+				</script>
 		    </div>
 	    </center>  
   	</body>
