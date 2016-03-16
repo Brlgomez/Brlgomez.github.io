@@ -4,8 +4,8 @@ html {
 }
 
 body {
-	color: #FFFFFF;
-	margin: 0 0 30px;
+	color: #3D3F50;
+	margin: 0 0 0px;
 	padding: 0;
 	background-color: #3D3F50;
 	font-family: 'Cabin', sans-serif;
@@ -13,7 +13,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #3D3f50;
 	font-size: 1.0em;
 }
 
@@ -30,14 +30,15 @@ h2 {
 }
 
 #text-container {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-family: 'Cabin', sans-serif;
 	font-size: 1.0em;
 }
+
 #header {
 	color: #3D3f50;
 	padding: 10px 0px;
 	background: #DDFFE0;
-	position: relative;
+	position: fixed;
 	top: 0;
 	height: 80px;
 	width: 100%;
@@ -47,10 +48,10 @@ h2 {
 #nav {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px 0px; 
+	padding: 10px 10px; 
 	position: fixed;
 	top: 0;
-	background-color: #A1DACE;
+	background-color: #DDFFE0;
 	width: 100%;
 	height: 30px;
 }
@@ -75,11 +76,22 @@ h2 {
 }
 
 #main-2 { /* this is for the projects page */
-	float: right;
-	width: 760px;
-	padding: 0px 20px 40px;
-	background: #A1CADA;
+	width: auto;
+	padding: 100px 20px 80px;
+	background: #A1DACE;
 	height: auto;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 #sidebar {
@@ -110,6 +122,7 @@ h2 {
 
 #footer p {
 	margin: 0;
+	font-size: 1.0em;
 }
 
 #container {
