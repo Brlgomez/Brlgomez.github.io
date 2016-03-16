@@ -1,11 +1,15 @@
 <html>
  	<head>
+ 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	    <title>A Brandon Gomez Portfolio</title>
 	    <link rel="stylesheet" type="text/css" href="style.css">    
   	</head>
   
   	<body>
+
  	 	<center>	
 		    <div id= "header">
 		      	<h1>Brandon Gomez</h1>
@@ -15,7 +19,7 @@
 	    <div id="nav"> <!-- navigation for links -->
 	        <ul>
 		      	<center>
-		      		<li><a href=".">Home</a></li>
+		      		<li><a href="." style="padding-left:75px">Home</a></li>
 					<li><a href="games.html">Games</a></li>
 					<li><a href="other.html">Other Projects</a></li>
 					<li><a href="about.html">About</a></li>
@@ -29,55 +33,79 @@
 		      	<div id ="main-2">
 					<div id="text-container">
 						<script type = "text/javascript">
-					        function displayNextImage() {
+					        function displayNextImageOdd() {
+					        	OverheardsItor = (OverheardsItor === OverheardsImages.length - 1) ? 0 : OverheardsItor + 1;
 					            EoBSItor = (EoBSItor === EoBSImages.length - 1) ? 0 : EoBSItor + 1;
-					            SPItor = (SPItor === SPImages.length - 1) ? 0 : SPItor + 1;
 					            SSItor = (SSItor === SSImages.length - 1) ? 0 : SSItor + 1;
-					            SBItor = (SBItor === SBImages.length - 1) ? 0 : SBItor + 1;
+					            document.getElementById("OverheardsImg").src = OverheardsImages[OverheardsItor];
 					            document.getElementById("EoBSImg").src = EoBSImages[EoBSItor];
-					            document.getElementById("SPImg").src = SPImages[SPItor];
 					            document.getElementById("SSImg").src = SSImages[SSItor];
-					       		document.getElementById("SBImg").src = SBImages[SBItor];
+					        }
+					        function displayNextImageEven(){
+					        	ODnDItor = (ODnDItor === ODnDImages.length - 1) ? 0 : ODnDItor + 1;
+					        	SPItor = (SPItor === SPImages.length - 1) ? 0 : SPItor + 1;
+					        	SBItor = (SBItor === SBImages.length - 1) ? 0 : SBItor + 1;
+					            document.getElementById("ODnDImg").src = ODnDImages[ODnDItor];
+					            document.getElementById("SPImg").src = SPImages[SPItor];
+					            document.getElementById("SBImg").src = SBImages[SBItor];
 					        }
 					        function startTimer() {
-			  	                setInterval(displayNextImage, 3000);
+					        	callAll();
 					        }
+					        function callAll(){
+			  	                setInterval(displayNextImageEven, 3000);
+			  	               	setInterval(displayNextImageOdd, 3500);
+					        }
+							var OverheardsImages = [], OverheardsItor = -1;
+							OverheardsImages[0] = "Pictures/Overheards/Overheards2Square.png";
+							OverheardsImages[1] = "Pictures/Overheards/Overheards3Square.png";
+							OverheardsImages[2] = "Pictures/Overheards/Overheards4Square.png";
+							OverheardsImages[3] = "Pictures/Overheards/Overheards5Square.png";
+							OverheardsImages[4] = "Pictures/Overheards/Overheards1Square.png";
+							var ODnDImages = [], ODnDItor = -1;
+							ODnDImages[0] = "Pictures/ODnD/ODnD2Square.png";
+							ODnDImages[1] = "Pictures/ODnD/ODnD3Square.png";
+							ODnDImages[2] = "Pictures/ODnD/ODnD4Square.png";
+							ODnDImages[3] = "Pictures/ODnD/ODnD5Square.png";
+							ODnDImages[4] = "Pictures/ODnD/ODnD6Square.png";
+							ODnDImages[5] = "Pictures/ODnD/ODnD1Square.png";
 					        var EoBSImages = [], EoBSItor = -1;
-					        EoBSImages[0] = "Pictures/EoBS2Square.png";
-					        EoBSImages[1] = "Pictures/EoBS3Square.png";
-					        EoBSImages[2] = "Pictures/EoBS4Square.png";
-				            EoBSImages[3] = "Pictures/EoBS5Square.png";
-					        EoBSImages[4] = "Pictures/EoBS6Square.png";
-					        EoBSImages[5] = "Pictures/EoBS1Square.png";
+					        EoBSImages[0] = "Pictures/EoBS/EoBS2Square.png";
+					        EoBSImages[1] = "Pictures/EoBS/EoBS3Square.png";
+					        EoBSImages[2] = "Pictures/EoBS/EoBS4Square.png";
+					        EoBSImages[3] = "Pictures/EoBS/EoBS5Square.png";
+					        EoBSImages[4] = "Pictures/EoBS/EoBS6Square.png";
+					        EoBSImages[5] = "Pictures/EoBS/EoBS1Square.png";
 					        var SPImages = [], SPItor = -1;
-					        SPImages[0] = "Pictures/SummerProject2Square.png";
-					        SPImages[1] = "Pictures/SummerProject3Square.png";
-					        SPImages[2] = "Pictures/SummerProject4Square.png";
-					        SPImages[3] = "Pictures/SummerProject5Square.png";
-					        SPImages[4] = "Pictures/SummerProject6Square.png";
-					        SPImages[5] = "Pictures/SummerProject1Square.png";
+					        SPImages[0] = "Pictures/SP/SummerProject2Square.png";
+					        SPImages[1] = "Pictures/SP/SummerProject3Square.png";
+					        SPImages[2] = "Pictures/SP/SummerProject4Square.png";
+					        SPImages[3] = "Pictures/SP/SummerProject5Square.png";
+					        SPImages[4] = "Pictures/SP/SummerProject6Square.png";
+					        SPImages[5] = "Pictures/SP/SummerProject1Square.png";
 					        var SSImages = [], SSItor = -1;
-					        SSImages[0] = "Pictures/SS0Square.png";
-					        SSImages[1] = "Pictures/SS2Square.png";
-					        SSImages[2] = "Pictures/SS3Square.png";
-					        SSImages[3] = "Pictures/SS4Square.png";
-					        SSImages[4] = "Pictures/SS1Square.png";
+					        SSImages[0] = "Pictures/SS/SS0Square.png";
+					        SSImages[1] = "Pictures/SS/SS2Square.png";
+					        SSImages[2] = "Pictures/SS/SS3Square.png";
+					        SSImages[3] = "Pictures/SS/SS4Square.png";
+					        SSImages[4] = "Pictures/SS/SS1Square.png";
 					        var SBImages = [], SBItor = -1;
-					        SBImages[0] = "Pictures/SB0Square.png"
-					        SBImages[1] = "Pictures/SB2Square.png"
-					        SBImages[2] = "Pictures/SB3Square.png"
-					        SBImages[3] = "Pictures/SB1Square.png"
+					        SBImages[0] = "Pictures/SB/SB0Square.png"
+					        SBImages[1] = "Pictures/SB/SB2Square.png"
+					        SBImages[2] = "Pictures/SB/SB3Square.png"
+					        SBImages[3] = "Pictures/SB/SB1Square.png"
 				      	</script>
+						<a href="about.html"><img src="Pictures/Profile2016.jpeg" class="img-circle" alt="Brandon Gomez" height="250" width="250"></a>
 						<br></br>
-						<a href="about.html"><img src="Pictures/Profile2016.jpeg" alt="Brandon Gomez" height="200" width="200">
-						<br></br>
-						<p>Hello, I am Brandon Gomez, I am currently a senior game design major at UCSC. Video games and art have been my passion since I have playing with Legos when I was adolescent. I love to make games that are more in the abstract, unconventional side of things and I always try to make each one of my games have an individuality by having both different aesthetics and gameplay. I strive to make my games beautiful, unique and have a lasting impression on the player. </p>
+						<p>Programmer, Game Designer, Music Lover</p>
 					  	<br></br>
 				      	<body onload = "startTimer()">
-					       	<a href="EoBS.html"><img id="EoBSImg" src="Pictures/EoBS1Square.png" alt="Project 1" height="200" width="200"/></a>
-					       	<a href="SummerProject.html"><img id="SPImg" src="Pictures/SummerProject1Square.png" alt="Project 1" height="200" width="200"></a>
-					       	<a href="SS.html"><img id = "SSImg" src="Pictures/SS1Square.png" alt="Project 1" height="200" width="200"></a>
-					       	<a href="SB.html"><img id = "SBImg" src="Pictures/SB1Square.png" alt="Project 1" height="200" width="200"></a>
+				      		<a href="other/Overheards.html"><img id="OverheardsImg" src="Pictures/Overheards/Overheards1Square.png" class="img-circle" alt="Overheards" height="250" width="250"/>
+				      		<a href="other/ODnD.html"><img id="ODnDImg" src="Pictures/ODnD/ODnD1Square.png" class="img-circle" alt="Online DnD" height="250" width="250"/></a>
+					       	<a href="games/EoBS.html"><img id="EoBSImg" src="Pictures/EoBS/EoBS1Square.png" class="img-circle" alt="Eye on Baby Sequoia" height="250" width="250"/></a>
+					       	<a href="games/SummerProject.html"><img id="SPImg" src="Pictures/SP/SummerProject1Square.png" class="img-circle" alt="Summer Project 2015" height="250" width="250"></a>
+					       	<a href="games/SS.html"><img id = "SSImg" src="Pictures/SS/SS1Square.png" class="img-circle" alt="Scorching Sea" height="250" width="250"></a>
+					       	<a href="games/SB.html"><img id = "SBImg" src="Pictures/SB/SB1Square.png" class="img-circle" alt="Shadow Boxer" height="250" width="250"></a>
 					   	</body>
 					</div>
 		      	</div> 
@@ -92,6 +120,7 @@
 					document.write(months[theDate.getMonth()] + " " + theDate.getFullYear());
 				</script>
 		    </div>
-	    </center>  
+	    </center> 
+
   	</body>
 </html>

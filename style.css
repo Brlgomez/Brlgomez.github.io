@@ -14,38 +14,54 @@ body {
 a {
 	text-decoration: none;
 	color: #3D3f50;
-	font-size: 1.0em;
+	font-size: 1.1em;
 }
 
 a:hover {
-	color: #3D3f50;
+	text-decoration: none;
+	color: #8588A3
 }
 
 h1 {
-	margin:45;
+	margin: 45;
 }
 
 h2 {
 	margin: 0 0 1em;
 }
 
+h3 {
+	margin: 0 0 1em;
+}
+
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3D3f50;
+    margin: 2em 0;
+    padding: 0; 
+}
+
 #text-container {
 	font-family: 'Cabin', sans-serif;
-	font-size: 1.0em;
+	font-size: 1.1em;
 }
 
 #header {
 	color: #3D3f50;
-	padding: 10px 0px;
+	z-index: 100;
+	padding: 0px 0px;
 	background: #DDFFE0;
 	position: fixed;
-	top: -20;
-	height: 80px;
+	top: -10;
+	height: 90px;
 	width: 100%;
 	margin: auto;
 }
 
 #nav {
+	z-index: 100;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1px 10px; 
@@ -77,7 +93,7 @@ h2 {
 
 #main-2 { /* this is for the projects page */
 	width: auto;
-	padding: 100px 20px 80px;
+	padding: 100px 20px 40px;
 	background: #A1DACE;
 	height: auto;
 }
@@ -90,8 +106,13 @@ h2 {
 
 img {
     max-width: 100%;
-    height: auto;
+    max-height: 720px;
     width: auto\9; /* ie8 */
+}
+
+img:hover {
+	-webkit-filter: drop-shadow(10px 10px 0px #3D3f50);
+    cursor: pointer;
 }
 
 #sidebar {
@@ -113,7 +134,7 @@ img {
 #footer {
 	color: #3D3f50;
 	position: fixed;
-	padding: 5px 0px;
+	padding: 0px 0px;
 	background: #FFDDFC;
 	height: 20px;
 	bottom: 0;
@@ -134,7 +155,3 @@ img {
 * html #footer {
 	height:1px;
 }
-
-
-
-
