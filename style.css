@@ -115,6 +115,31 @@ img:hover {
     cursor: pointer;
 }
 
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h4 { 
+   position: absolute; 
+   top: 0px; 
+   left: 0; 
+   width: 100%;
+   z-index: 1; 
+}
+
+h4 span { 
+   color: white; 
+   letter-spacing: 0px;  
+   background: #3D3f50; /* fallback color */
+   background: rgba(61, 63, 80, 0.75);
+   padding: 10px; 
+}
+
+h4 span.spacer {
+   	padding:0 5px;
+}
+
 #check:checked ~ label #cover{
     display:block;
 }
@@ -167,6 +192,7 @@ img:hover {
 	bottom: 0;
 	width: 100%;
 	font-size: 1.25em;
+	z-index: 1;
 }
 
 #footer p {
