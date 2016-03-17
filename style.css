@@ -14,7 +14,7 @@ body {
 a {
 	text-decoration: none;
 	color: #3D3f50;
-	font-size: 1.1em;
+	font-size: 1.25em;
 }
 
 a:hover {
@@ -45,7 +45,7 @@ hr {
 
 #text-container {
 	font-family: 'Cabin', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.25em;
 }
 
 #header {
@@ -93,7 +93,7 @@ hr {
 
 #main-2 { /* this is for the projects page */
 	width: auto;
-	padding: 100px 20px 40px;
+	padding: 100px 20px 50px;
 	background: #A1DACE;
 	height: auto;
 }
@@ -106,13 +106,40 @@ hr {
 
 img {
     max-width: 100%;
-    max-height: 720px;
+    max-height: 500px;
     width: auto\9; /* ie8 */
 }
 
 img:hover {
 	-webkit-filter: drop-shadow(10px 10px 0px #3D3f50);
     cursor: pointer;
+}
+
+#check:checked ~ label #cover{
+    display:block;
+}
+
+#cover{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.5);
+    display:none;
+}
+
+#box{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    max-width: 1000px;
+    max-height: 500px;
+    width: auto\9; /* ie8 */
+    border:0px solid white;
 }
 
 #sidebar {
@@ -134,11 +161,12 @@ img:hover {
 #footer {
 	color: #3D3f50;
 	position: fixed;
-	padding: 0px 0px;
+	padding: 5px 0px;
 	background: #FFDDFC;
-	height: 20px;
+	height: 30px;
 	bottom: 0;
 	width: 100%;
+	font-size: 1.25em;
 }
 
 #footer p {
@@ -153,5 +181,5 @@ img:hover {
 }
 
 * html #footer {
-	height:1px;
+	height: 1px;
 }
