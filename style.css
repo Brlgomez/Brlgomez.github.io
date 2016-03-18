@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-	margin: 0 0 1em;
+	margin: 0 0 0.5em;
 }
 
 hr {
@@ -39,7 +39,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #3D3f50;
-    margin: 2em 0;
+    margin: 1em 0;
     padding: 0; 
 }
 
@@ -115,6 +115,8 @@ img:hover {
     cursor: pointer;
 }
 
+/* For index name covers*/
+
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -122,10 +124,9 @@ img:hover {
 
 h4 { 
    position: absolute; 
-   top: 0px; 
+   top: 50px; 
    left: 0; 
    width: 100%;
-   z-index: 1; 
 }
 
 h4 span { 
@@ -139,6 +140,8 @@ h4 span {
 h4 span.spacer {
    	padding:0 5px;
 }
+
+/* End of index name covers*/
 
 #check:checked ~ label #cover{
     display:block;
