@@ -59,9 +59,11 @@
 					        	OverheardsItor = (OverheardsItor === OverheardsImages.length - 1) ? 0 : OverheardsItor + 1;
 					            EoBSItor = (EoBSItor === EoBSImages.length - 1) ? 0 : EoBSItor + 1;
 					            SSItor = (SSItor === SSImages.length - 1) ? 0 : SSItor + 1;
+					            CMItor = (CMItor === CMImages.length - 1) ? 0 : CMItor + 1;
 					            document.getElementById("OverheardsImg").src = OverheardsImages[OverheardsItor];
 					            document.getElementById("EoBSImg").src = EoBSImages[EoBSItor];
 					            document.getElementById("SSImg").src = SSImages[SSItor];
+					            document.getElementById("CMImg").src = CMImages[CMItor];
 					        }
 					        function displayNextImageEven(){
 					        	ODnDItor = (ODnDItor === ODnDImages.length - 1) ? 0 : ODnDItor + 1;
@@ -116,6 +118,10 @@
 					        SBImages[1] = "games/SB/SB2Square.png"
 					        SBImages[2] = "games/SB/SB3Square.png"
 					        SBImages[3] = "games/SB/SB1Square.png"
+					        var CMImages = [], CMItor = -1;
+					        CMImages[0] = "games/CustomMaps/Halo3_1_Square.jpg"
+					        CMImages[1] = "games/CustomMaps/Halo4_2_Square.jpg"
+					        CMImages[2] = "games/CustomMaps/Minecraft_1_Square.jpg"
 				      	</script>
 						<a href="about.html"><img src="Pictures/Profile2016.jpeg" class="img-circle" alt="Brandon Gomez" height="250" width="250"></a>
 						<br></br>
@@ -146,6 +152,10 @@
 					       	<div class="image" style="display:inline">
 					       		<a href="games/SB.html"><img id = "SBImg" src="games/SB/SB1Square.png" class="img-circle" alt="Shadow Boxer" height="250" width="250"></a>
 					       		<h4><span>Shadow Boxer<span class='spacer'></span><br/><br/><span class='spacer'></span>April - June 2014</span></h4>
+					       	</div>
+					       	<div class="image" style="display:inline">
+					       		<a href="games/CustomMaps.html"><img id = "CMImg" src="games/CustomMaps/Halo3_1_Square.jpg" class="img-circle" alt="Custom Maps" height="250" width="250"></a>
+					       		<h4><span>Custom Maps<span class='spacer'></span><br/><br/><span class='spacer'></span>2009 - 2014</span></h4>
 					       	</div>
 					   	</body>
 					</div>
