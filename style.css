@@ -5,8 +5,6 @@ html {
 
 body {
 	color: #3D3F50;
-	margin: 0 0 0px;
-	padding: 0;
 	background-color: #3D3F50;
 	font-family: 'Cabin', sans-serif;
 }
@@ -64,12 +62,11 @@ hr {
 	z-index: 100;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1px 10px; 
 	position: fixed;
 	top: 0;
 	background-color: #DDFFE0;
 	width: 100%;
-	height: 30px;
+	height: auto;
 }
 
 #nav ul {
@@ -83,19 +80,11 @@ hr {
 	padding: 5px 75px 5px 0px;
 }
 
-#main {
-	float: right;
-	width: 460px;
-	padding: 0px 20px 80px;
-	background: #DDFFF1;
-	height: auto;
-}
-
 #main-2 { /* this is for the projects page */
-	width: auto;
+	width: 100%;
+	height: auto;
 	padding: 100px 20px 50px;
 	background: #A1DACE;
-	height: auto;
 }
 
 .img{
@@ -168,22 +157,6 @@ h4 span.spacer {
     max-height: 500px;
     width: auto\9; /* ie8 */
     border:0px solid white;
-}
-
-#sidebar {
-	float: left;
-	width: 280px;
-	padding: 0px 10px 200px;
-	background: #A1CADA;
-	height: auto;
-}
-
-#sidebar ul {
-	list-style: none;
-}
-
-#sidebar li {
-	margin: 10px 0;
 }
 
 #footer {
