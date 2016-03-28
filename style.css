@@ -59,6 +59,7 @@ hr {
 }
 
 #nav {
+	font-size: 1vw;
 	z-index: 100;
 	margin-left: auto;
 	margin-right: auto;
