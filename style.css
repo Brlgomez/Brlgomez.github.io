@@ -21,7 +21,8 @@ a:hover {
 }
 
 h1 {
-	margin: 45;
+	margin: 5;
+	font-size: 1.5em;
 }
 
 h2 {
@@ -47,6 +48,7 @@ hr {
 	background-color: #DDFFE0;
 	margin: 0;
     border: 0;
+    top: 25;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -73,12 +75,12 @@ hr {
 
 #header {
 	color: #3D3f50;
-	z-index: 100;
+	z-index: 101;
 	padding: 0px 0px;
 	background: #DDFFE0;
 	position: fixed;
-	top: -5;
-	height: 90px;
+	top: 0;
+	height: 30px;
 	width: 100%;
 	margin: auto;
 }
@@ -108,7 +110,7 @@ hr {
 #main-2 { /* this is for the projects page */
 	width: 100%;
 	height: auto;
-	padding: 70px 20px 50px;
+	padding: 95px 20px 50px;
 	background: #A1DACE;
 }
 
