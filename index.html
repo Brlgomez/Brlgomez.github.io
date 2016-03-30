@@ -67,9 +67,11 @@
 					            document.getElementById("CMImg").src = CMImages[CMItor];
 					        }
 					        function displayNextImageEven(){
+					        	PPCItor = (PPCItor === PPCImages.length - 1) ? 0 : PPCItor + 1;
 					        	ODnDItor = (ODnDItor === ODnDImages.length - 1) ? 0 : ODnDItor + 1;
 					        	SPItor = (SPItor === SPImages.length - 1) ? 0 : SPItor + 1;
 					        	SBItor = (SBItor === SBImages.length - 1) ? 0 : SBItor + 1;
+					        	document.getElementById("PPCImg").src = PPCImages[PPCItor];
 					            document.getElementById("ODnDImg").src = ODnDImages[ODnDItor];
 					            document.getElementById("SPImg").src = SPImages[SPItor];
 					            document.getElementById("SBImg").src = SBImages[SBItor];
@@ -81,6 +83,7 @@
 			  	                setInterval(displayNextImageEven, 4000);
 			  	               	setInterval(displayNextImageOdd, 6000);
 					        }
+					        var PPCImages = [], PCCItor = -1;
 							var OverheardsImages = [], OverheardsItor = -1;
 							OverheardsImages[0] = "other/Overheards/Overheards2Square.png";
 							OverheardsImages[1] = "other/Overheards/Overheards3Square.png";
@@ -131,7 +134,7 @@
 					  	<p>Here are some of my previous projects:</p>
 				      	<body onload = "startTimer()">
 				      		<div class="image" style="display:inline">
-				      			<a href="games/project_perfect_citizen.html"><img id="OverheardsImg" src="games/project_perfect_citizen/ppc_1_square.png" class="img-circle" alt="Project Perfect Citizen" height="250" width="250"/>
+				      			<a href="games/project_perfect_citizen.html"><img id="PPCImg" src="games/project_perfect_citizen/ppc_1_square.png" class="img-circle" alt="Project Perfect Citizen" height="250" width="250"/>
 				      			<h4><span>Project Perfect Citizen<span class='spacer'></span><br/><br/><span class='spacer'></span>Septemper 2015 - Now</span></h4>
 				      		</div>
 				      		<div class="image" style="display:inline">
