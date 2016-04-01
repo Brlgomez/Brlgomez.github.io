@@ -172,11 +172,11 @@ h4 span {
    letter-spacing: 0px;  
    background: #3D3f50; /* fallback color */
    background: rgba(61, 63, 80, 0.75);
-   padding: 10px; 
+   padding: 8px; 
 }
 
 h4 span.spacer {
-   	padding:0 5px;
+   	padding:0 4px;
 }
 
 /* End of index name covers*/
