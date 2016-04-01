@@ -48,7 +48,7 @@ hr {
 	background-color: #DDFFE0;
 	margin: 0;
     border: 0;
-    top: 25;
+    top: 20;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -60,12 +60,34 @@ hr {
 	vertical-align: top;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #3D3f50;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #8588A3;
+}
+
 .navbar .navbar-collapse {
   	text-align: center;
 }
 
 .navbar .dropdown-menu{
 	background-color: #DDFFE0
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #A1DACE;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #A1DACE;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #3D3f50;
 }
 
 #text-container {
@@ -80,7 +102,7 @@ hr {
 	background: #DDFFE0;
 	position: fixed;
 	top: 0;
-	height: 30px;
+	height: 25px;
 	width: 100%;
 	margin: auto;
 }
@@ -110,7 +132,7 @@ hr {
 #main-2 { /* this is for the projects page */
 	width: 100%;
 	height: auto;
-	padding: 95px 20px 50px;
+	padding: 90px 20px 50px;
 	background: #A1DACE;
 }
 
@@ -188,7 +210,7 @@ h4 span.spacer {
 
 #footer {
 	color: #3D3f50;
-	position: fixed;
+	position: absolute;
 	padding: 5px 0px;
 	background: #FFDDFC;
 	height: 30px;
