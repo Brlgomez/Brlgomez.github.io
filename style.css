@@ -149,7 +149,7 @@ img {
 }
 
 img:hover {
-	-webkit-filter: drop-shadow(10px 10px 0px #3D3f50);
+	-webkit-filter: drop-shadow(5px 5px 5px #3D3f50);
     cursor: pointer;
 }
 
