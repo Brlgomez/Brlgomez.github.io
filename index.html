@@ -64,6 +64,7 @@
 					<div id="text-container">
 						<script type = "text/javascript">
 					        function displayNextImageOdd() {
+					        	FloorItItor = (FloorItItor === FloorItImages.length - 1) ? 0 : FloorItItor + 1;
 					        	OverheardsItor = (OverheardsItor === OverheardsImages.length - 1) ? 0 : OverheardsItor + 1;
 					            EoBSItor = (EoBSItor === EoBSImages.length - 1) ? 0 : EoBSItor + 1;
 					            SSItor = (SSItor === SSImages.length - 1) ? 0 : SSItor + 1;
@@ -90,6 +91,8 @@
 			  	                setInterval(displayNextImageEven, 4000);
 			  	               	setInterval(displayNextImageOdd, 6000);
 					        }
+					        var FloorItImages = [], FloorItItor = -1;
+					        FloorItImages[0] = "games/floor_it/floor_it_1_square.png";
 					        var PPCImages = [], PPCItor = -1;
 					        PPCImages[0] = "games/project_perfect_citizen/PPC_4_Square.png";
 					        PPCImages[1] = "games/project_perfect_citizen/PPC_5_Square.png";
@@ -146,6 +149,10 @@
 						<p>I am currently working on my senior-year game design studio project at UCSC.</p>
 					  	<p>Here are some of my previous projects:</p>
 				      	<body onload = "startTimer()">
+				      		<div class="image" style="display:inline">
+				      			<a href="games/floor_it.html"><img id="FloorItImg" src="games/floor_it/floor_it_1_square.png" class="img-circle" alt="Floor It" height="250" width="250"/>
+				      			<h4><span>Floor It<span class='spacer'></span><br/><br/><span class='spacer'></span>July 2016 - Ongoing</span></h4>
+				      		</div>
 				      		<div class="image" style="display:inline">
 				      			<a href="games/project_perfect_citizen.html"><img id="PPCImg" src="games/project_perfect_citizen/PPC_2_Square.png" class="img-circle" alt="Project Perfect Citizen" height="250" width="250"/>
 				      			<h4><span>Project Perfect Citizen<span class='spacer'></span><br/><br/><span class='spacer'></span>December 2015 - Ongoing</span></h4>
