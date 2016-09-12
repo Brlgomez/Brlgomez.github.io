@@ -69,6 +69,7 @@
 					            EoBSItor = (EoBSItor === EoBSImages.length - 1) ? 0 : EoBSItor + 1;
 					            SSItor = (SSItor === SSImages.length - 1) ? 0 : SSItor + 1;
 					            CMItor = (CMItor === CMImages.length - 1) ? 0 : CMItor + 1;
+					            document.getElementById("FloorItImg").src = FloorItImages[FloorItItor];
 					            document.getElementById("OverheardsImg").src = OverheardsImages[OverheardsItor];
 					            document.getElementById("EoBSImg").src = EoBSImages[EoBSItor];
 					            document.getElementById("SSImg").src = SSImages[SSItor];
@@ -92,7 +93,9 @@
 			  	               	setInterval(displayNextImageOdd, 6000);
 					        }
 					        var FloorItImages = [], FloorItItor = -1;
-					        FloorItImages[0] = "games/floor_it/floor_it_1_square.png";
+					        FloorItImages[0] = "games/floor_it/floor_it_4_square.png";
+					        FloorItImages[1] = "games/floor_it/floor_it_5_square.png";
+					        FloorItImages[2] = "games/floor_it/floor_it_9_square.png";
 					        var PPCImages = [], PPCItor = -1;
 					        PPCImages[0] = "games/project_perfect_citizen/PPC_4_Square.png";
 					        PPCImages[1] = "games/project_perfect_citizen/PPC_6_Square.png";
@@ -134,7 +137,7 @@
 					  	<p>Here are some of my projects:</p>
 				      	<body onload = "startTimer()">
 				      		<div class="image" style="display:inline">
-				      			<a href="games/floor_it.html"><img id="FloorItImg" src="games/floor_it/floor_it_1_square.png" class="img-circle" alt="Floor It" height="250" width="250"/>
+				      			<a href="games/floor_it.html"><img id="FloorItImg" src="games/floor_it/floor_it_9_square.png" class="img-circle" alt="Floor It" height="250" width="250"/>
 				      			<h4><span>Floor It<span class='spacer'></span><br/><br/><span class='spacer'></span>July 2016 - Ongoing</span></h4>
 				      		</div>
 				      		<div class="image" style="display:inline">
