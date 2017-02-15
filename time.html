@@ -8,7 +8,7 @@
         var month = currentTime.getMonth() + 1;
         var day = currentTime.getDate() + 1;
         var v = year + "-" + month + "-" + day + " ";
-        //setTimeout("updateTime()",1000);
+        setTimeout("updateTime()",1000);
         document.getElementById('time').innerHTML=v;
     }
     updateTime();
