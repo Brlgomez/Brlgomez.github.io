@@ -8,13 +8,15 @@
 <script type="text/javascript">
     <!--
     function updateTime() {
-        var currentTime = new Date();
-        var year = currentTime.getFullYear();
-        var month = currentTime.getMonth() + 1;
-        var day = currentTime.getDate() + 1;
-        var v = year + "-" + month + "-" + day + " ";
-        setTimeout("updateTime()",1000);
-        document.getElementById('time').innerHTML=v;
+        var d = new Date();
+        var n = d.getTime();
+        //var currentTime = new Date();
+        //var year = currentTime.getFullYear();
+        //var month = currentTime.getMonth() + 1;
+        //var day = currentTime.getDate() + 1;
+        //var v = year + "-" + month + "-" + day + " ";
+        //setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=n;
     }
     updateTime();
     //-->
