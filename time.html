@@ -4,14 +4,14 @@
     <!--
     function updateTime() {
         var currentTime = new Date();
-        var year = currentTime.getYear()
-        var month = currentTime.getMonth();
-        var day = currentTime.getDay();
+        var year = currentTime.getFullYear();
+        var month = currentTime.getMonth() + 1;
+        var day = currentTime.getDate() + 1;
         var v = day + "/" + month + "/" + year + " ";
-        //setTimeout("updateTime()",1000);
+        setTimeout("updateTime()",1000);
         document.getElementById('time').innerHTML=v;
     }
-    //updateTime();
+    updateTime();
     //-->
 </script>
 </head>
