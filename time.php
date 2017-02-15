@@ -1,3 +1,3 @@
  <?php 
- print date("G.i:s", time());
+ print date("j F Y", time());
  ?>
