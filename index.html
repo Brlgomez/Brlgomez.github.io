@@ -62,83 +62,9 @@
 		    <div id="container">
 		      	<div id ="main-2">
 					<div id="text-container">
-						<script type = "text/javascript">
-					        function displayNextImageOdd() {
-					        	FloorItItor = (FloorItItor === FloorItImages.length - 1) ? 0 : FloorItItor + 1;
-					        	OverheardsItor = (OverheardsItor === OverheardsImages.length - 1) ? 0 : OverheardsItor + 1;
-					            EoBSItor = (EoBSItor === EoBSImages.length - 1) ? 0 : EoBSItor + 1;
-					            SSItor = (SSItor === SSImages.length - 1) ? 0 : SSItor + 1;
-					            CMItor = (CMItor === CMImages.length - 1) ? 0 : CMItor + 1;
-					            document.getElementById("FloorItImg").src = FloorItImages[FloorItItor];
-					            document.getElementById("OverheardsImg").src = OverheardsImages[OverheardsItor];
-					            document.getElementById("EoBSImg").src = EoBSImages[EoBSItor];
-					            document.getElementById("SSImg").src = SSImages[SSItor];
-					            document.getElementById("CMImg").src = CMImages[CMItor];
-					        }
-					        function displayNextImageEven(){
-					        	VoxItor = (VoxItor === VoxImages.length - 1) ? 0 : VoxItor + 1;
-					        	PPCItor = (PPCItor === PPCImages.length - 1) ? 0 : PPCItor + 1;
-					        	ODnDItor = (ODnDItor === ODnDImages.length - 1) ? 0 : ODnDItor + 1;
-					        	SPItor = (SPItor === SPImages.length - 1) ? 0 : SPItor + 1;
-					        	SBItor = (SBItor === SBImages.length - 1) ? 0 : SBItor + 1;
-					        	document.getElementById("VoxImg").src = VoxImages[VoxItor];
-					        	document.getElementById("PPCImg").src = PPCImages[PPCItor];
-					            document.getElementById("ODnDImg").src = ODnDImages[ODnDItor];
-					            document.getElementById("SPImg").src = SPImages[SPItor];
-					            document.getElementById("SBImg").src = SBImages[SBItor];
-					        }
-					        function startTimer() {
-					        	callAll();
-					        }
-					        function callAll(){
-			  	                setInterval(displayNextImageEven, 4000);
-			  	               	setInterval(displayNextImageOdd, 6000);
-					        }
-					        var VoxImages = [], VoxItor = -1;
-					        VoxImages[0] = "games/vox_voyager/vox_voyager_square_2.png"; 
-					        VoxImages[1] = "games/vox_voyager/vox_voyager_square_3.png";
-					        VoxImages[2] = "games/vox_voyager/vox_voyager_square_1.png";
-					        var FloorItImages = [], FloorItItor = -1;
-					        FloorItImages[0] = "games/floor_it/floor_it_4_square.png";
-					        FloorItImages[1] = "games/floor_it/floor_it_5_square.png";
-					        FloorItImages[2] = "games/floor_it/floor_it_6_square.png";
-					        var PPCImages = [], PPCItor = -1;
-					        PPCImages[0] = "games/project_perfect_citizen/PPC_4_Square.png";
-					        PPCImages[1] = "games/project_perfect_citizen/PPC_6_Square.png";
-					        PPCImages[2] = "games/project_perfect_citizen/PPC_2_Square.png";
-							var OverheardsImages = [], OverheardsItor = -1;
-							OverheardsImages[0] = "other/Overheards/Overheards2Square.png";
-							OverheardsImages[1] = "other/Overheards/Overheards4Square.png";
-							OverheardsImages[2] = "other/Overheards/Overheards1Square.png";
-							var ODnDImages = [], ODnDItor = -1;
-							ODnDImages[0] = "other/online_dnd/online_dnd_3_Square.png";
-							ODnDImages[1] = "other/online_dnd/online_dnd_5_Square.png";
-							ODnDImages[2] = "other/online_dnd/online_dnd_6_Square.png";
-					        var EoBSImages = [], EoBSItor = -1;
-					        EoBSImages[0] = "games/EoBS/EoBS3Square.png";
-					        EoBSImages[1] = "games/EoBS/EoBS4Square.png";
-					        EoBSImages[2] = "games/EoBS/EoBS1Square.png";
-					        var SPImages = [], SPItor = -1;
-					        SPImages[0] = "games/SP/SummerProject4Square.png";
-					        SPImages[1] = "games/SP/SummerProject6Square.png";
-					        SPImages[2] = "games/SP/SummerProject1Square.png";
-					        var SSImages = [], SSItor = -1;
-					        SSImages[0] = "games/SS/SS2Square.png";
-					        SSImages[1] = "games/SS/SS4Square.png";
-					        SSImages[2] = "games/SS/SS1Square.png";
-					        var SBImages = [], SBItor = -1;
-					        SBImages[0] = "games/SB/SB2Square.png"
-					        SBImages[1] = "games/SB/SB3Square.png"
-					        SBImages[2] = "games/SB/SB1Square.png"
-					        var CMImages = [], CMItor = -1;
-					        CMImages[0] = "games/custom_maps/HaloReach_2_Square.jpg"
-					        CMImages[1] = "games/custom_maps/Minecraft_1_Square.jpg"
-					        CMImages[2] = "games/custom_maps/Halo3_1_Square.jpg"
-				      	</script>
-
 						<a href="about.html"><img src="Pictures/Profile2016.jpeg" class="img-circle" alt="Brandon Gomez" height="250" width="250"></a>
 						<br></br>
-						<p>I am a programmer, game designer, and music lover. My specialities include gameplay programming, level design, QA testing, and aesthetics coordination.</p>
+						<p>I am a programmer, game designer, and music lover. My specialities include gameplay programming, level design, and QA testing.</p>
 						<p>I am currently working on a mobile games for iOS and Android.</p>
 					  	<p>Here are some of my projects:</p>
 				      	<body onload = "startTimer()">
